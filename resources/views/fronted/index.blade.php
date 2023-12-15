@@ -63,13 +63,12 @@
 					<div class="site-branding">
 						<div class="site-branding-wrap">
 							<div class="site-branding-left">
+
 															</div> <!-- .site-branding-left -->
 
 							<div class="site-branding-center">
 
-													<a href="{{route('fronted.index')}}" rel="home">
-                                                        <img src="{{asset('dashboard/assets/logo.png')}}">
-													</a>
+
 												 <!-- .site-title -->
 																			<p class="site-description">
 																	</p> <!-- .site-description -->
@@ -82,10 +81,13 @@
 					<nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
 						<div class="menu-wrap">
 							<div class="layout-medium">
-								<a class="menu-toggle">
-									<span class="lines"></span>
 
-								</a>
+                                <a class="menu-toggle">
+                                    <span class="lines"></span>
+                                    <a href="{{route('fronted.index')}}" rel="home" class="logo-img">
+                                        <img src="{{asset('dashboard/assets/logo.png')}}">
+                                    </a>
+                                </a>
                                 <!-- .menu-toggle -->
 <div class="nav-menu"><ul id="menu-main-menu" class=""><li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-847"><a href="{{route('fronted.index')}}" aria-current="page">Home</a></li>
 <li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="{{route('fronted.about')}}">About Us</a></li>
@@ -483,7 +485,7 @@
 </div>
 		</div>
 				</div>
-				<div class="elementor-element elementor-element-4108f6ad animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="4108f6ad" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-4108f6ad animated-slow elementor-invisible elementor-widget elementor-widget-heading" data-id="4108f6ad" data-element_type="widget" data-settings="{&quot;_animation:fadeInUp}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">{{$about['wordheader'] }}</h2>		</div>
 				</div>
@@ -491,7 +493,7 @@
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-5286f656 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5286f656" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<section class="about-section elementor-section elementor-top-section elementor-element elementor-element-5286f656 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5286f656" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2ad77cbe" data-id="2ad77cbe" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -512,7 +514,7 @@
 											<img decoding="async" loading="lazy" src="{{asset($about['img3'])}}" alt="" width="1000" height="1000" />									</div>
 			</div>
 	</div>
-	<div class="qodef-m-fake-card">
+	<div class="qodef-m-fake-card about-section-fake">
 		<img decoding="async" loading="lazy" src="wp-content/uploads/sites/2/2023/07/concept-clean-energy-saving-power-nature-solar-panel-with-wind-turbine-small-tree-lightbulb-1000x1000.jpg" alt="" width="1000" height="1000" />	</div>
 	<div class="qodef-m-navigation">
 		<div class="qodef-nav qodef--prev"><svg class="qodef-swiper-arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;"><line x1="0.5" y1="16" x2="33.5" y2="16"/><line x1="0.3" y1="16.5" x2="16.2" y2="0.7"/><line x1="0" y1="15.4" x2="16.2" y2="31.6"/></svg></div>

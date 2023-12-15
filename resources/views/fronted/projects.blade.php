@@ -55,15 +55,10 @@
 						<div class="site-branding-wrap">
 							<div class="site-branding-left">
 															</div> <!-- .site-branding-left -->
-							
+
 							<div class="site-branding-center">
 								<h1 class="site-title" style="color: black">
-									<a href="{{route('fronted.index')}}" rel="home">
-										<span class="screen-reader-text">
-											energify									</span>
-										<span class="site-title-text">
-											energify									</span>
-									</a>
+
 								</h1> <!-- .site-title -->
 																			<p class="site-description">
 																	</p> <!-- .site-description -->
@@ -72,13 +67,16 @@
 															</div> <!-- .site-branding-right -->
 						</div> <!-- .site-branding-wrap -->
 					</div> <!-- .site-branding -->
-					
+
 					<nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
 						<div class="menu-wrap">
 							<div class="layout-medium" style="color: black">
-								<a class="menu-toggle">
-									<span class="lines"></span>
-								</a> <!-- .menu-toggle -->
+                                <a class="menu-toggle">
+                                    <span class="lines"></span>
+                                    <a href="{{route('fronted.index')}}" rel="home" class="logo-img">
+                                        <img src="{{asset('dashboard/assets/logo.png')}}">
+                                    </a>
+                                </a>
 <div class="nav-menu"><ul id="menu-main-menu" class=""><li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-847"><a href="{{route('fronted.index')}}">Home</a></li>
 <li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="{{route('fronted.about')}}">About Us</a></li>
 <li id="menu-item-1247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247"><a href="{{route('fronted.services')}}">Services</a></li>
@@ -86,7 +84,7 @@
 <li id="menu-item-6411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6411"><a href="{{route('fronted.news')}}">News</a></li>
 <li id="menu-item-1000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000"><a href="{{route('fronted.contact')}}">Contact</a></li>
 </ul></div>											<a class="search-toggle toggle-link"></a>
-											
+
 											<div class="search-container">
 												<div class="search-box">
 													<form class="search-form" method="get" action="https://themes.pixelwars.org/energify/demo-01/">
@@ -115,22 +113,22 @@
 							Projects						</h1> <!-- .entry-title -->
 					</header> <!-- .entry-header -->
 				</div> <!-- .post-header .post-header-classic .portfolio-header -->
-				
+
 				<ul id="filters" class="filters">
 									</ul> <!-- #filters .filters -->
-				
-								
-								
+
+
+
 				<div class="blog-grid-wrap">
 					<div class="blog-stream blog-grid blog-small portfolio-grid masonry" data-layout="fitRows" data-item-width="380">
-												
-												
-												
+
+
+
 								@if ( !empty($content[0]))
-												
+
 						@foreach ($content as $i => $slides)
-							
-						<?php 
+
+						<?php
 								$string = $slides;
 								$pairs = explode('#x#', $string);
 								$slide = [];
@@ -139,10 +137,10 @@
 									$slide[$key] = $value;
 								}
 								if($slide['status']=='disappear')  continue;
-						?>								
-												
-												
-												
+						?>
+
+
+
 									<div id="post-3178" class="post-3178 portfolio type-portfolio status-publish format-standard has-post-thumbnail hentry ">
 				<div class="hentry-wrap">
 																																<div class="featured-image">
@@ -164,24 +162,24 @@
 				</div> <!-- .hentry-wrap -->
 			</div> <!-- .hentry -->
 			@endforeach
-	
+
 @endif
 														</div> <!-- .blog-stream .blog-grid .blog-small .portfolio-grid .masonry -->
 				</div> <!-- .blog-grid-wrap -->
-				
+
 							</div> <!-- #content .site-content -->
 		</div> <!-- #primary .content-area -->
-		
+
 			</div> <!-- layout -->
 </div> <!-- #main .site-main -->
 
         <footer id="colophon" class="site-footer" role="contentinfo">
 									<div class="site-info">
-							
+
 <p>©  {{now()->year}} Netzero Company</p>
 						</div> <!-- .site-info -->
 							</footer> <!-- #colophon .site-footer -->
 	</div>
-    
+
 
 @endsection
