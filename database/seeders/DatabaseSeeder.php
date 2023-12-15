@@ -18,15 +18,15 @@ class DatabaseSeeder extends Seeder
     {
 
         User::factory()->create([
-            'name' => 'AliabdO',
-            'email' => 'admin@gmail.com',
-            'password' =>Hash::make('12345'),
+            'name' => 'Omar Akrab',
+            'email' => 'admin2@gmail.com',
+            'password' =>Hash::make('xYz12@d@BolaEl3arab'),
         ]);
 
-        $this->call([
-            HomeSeeder::class,
-        ]);
-    
+//        $this->call([
+//            HomeSeeder::class,
+//        ]);
+//
 
 
     }
