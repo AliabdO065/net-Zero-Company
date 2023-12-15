@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-US" class="no-featured-area is-header-small is-body-full-width is-single-post-title-default is-post-title-align-center is-post-media-fixed is-blog-text-align-left is-meta-with-icons is-header-light is-header-full-width is-header-parallax-no is-menu-sticky is-menu-fixed-width is-menu-align-right is-menu-light is-submenu-light is-submenu-align-left is-menu-uppercase is-featured-area-fixed is-slider-buttons-center-margin is-slider-buttons-rounded is-slider-buttons-dark is-slider-title-default is-slider-parallax is-slider-title-none-uppercase is-slider-more-link-show is-slider-more-link-button-style is-slider-text-align-center is-slider-v-align-center is-slider-h-align-center is-link-box-title-default is-link-box-title-transform-none is-link-box-text-align-center is-link-box-v-align-center is-link-box-parallax is-intro-align-center is-intro-text-dark is-intro-parallax-no is-more-link-border-bottom-light is-about-author-minimal is-related-posts-parallax is-related-posts-overflow is-share-links-boxed is-tagcloud-minimal is-nav-single-rounded is-nav-single-no-animated is-comments-minimal is-comments-image-rounded is-comment-form-boxed is-comment-form-border is-sidebar-right is-sidebar-sticky is-sidebar-align-left is-widget-title-align-left is-widget-bottomline is-trending-posts-default is-footer-subscribe-light is-footer-widgets-align-left is-footer-full-width is-meta-uppercase is-site-title-uppercase is-top-bar-uppercase is-sub-menu-ani-fade-in-left is-menu-hover-badge is-copyright-uppercase is-header-sticky-shadow-soft-shorter is-header-border-fixed is-header-float is-header-transparent" data-title-ratio="0.5" data-link-box-title-ratio="0.5" data-generic-button-style="" data-header-bg-shape="">
-	
+
 <!-- Mirrored from themes.pixelwars.org/energify/demo-01/about/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Nov 2023 10:14:15 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
@@ -188,6 +188,7 @@ body { background: #ffffff; }
 
 
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 <script type='text/javascript' src='{{asset('fronted/wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2')}}' id='jquery-ui-core-js'></script>
 <script type='text/javascript' id='qi-addons-for-elementor-script-js-extra'>
@@ -223,6 +224,10 @@ step: $.validator.format("Please enter a multiple of {0}.")
 });
 })(jQuery);
 </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{{asset('fronted/wp-content/themes/NetZero/js/main.js')}}" id="jquery-core-js"></script>
+    <script src="{{asset('fronted/wp-includes/js/jquery/jquery-migrate.min6b00.js')}}" id="jquery-core-js"></script>
+    <script src="{{asset('fronted/wp-includes/js/')}}" id="jquery-core-js"></script>
 <script type='text/javascript' src='{{asset('fronted/wp-content/plugins/qi-addons-for-elementor/inc/masonry/assets/js/plugins/isotope.pkgd.min18cf.js?ver=6.2.3')}}' id='isotope-js'></script>
 <script type='text/javascript' src='{{asset('fronted/wp-content/themes/NetZero/js/jquery.magnific-popup/jquery.magnific-popup.min.js')}}' id='magnific-popup-js'></script>
 <script type='text/javascript' src='{{asset('fronted/wp-content/themes/NetZero/js/owl-carousel/owl.carousel.min.js')}}' id='owl-carousel-js'></script>

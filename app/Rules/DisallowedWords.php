@@ -23,13 +23,14 @@ class DisallowedWords implements Rule
      */
     public function passes($attribute, $value)
     {
-        $disallowedWords = ['#x#', '#xt#','=#=','x#','#x','=#','#=']; 
+        $disallowedWords = ['#x#', '#xt#','=#=','x#','#x','=#','#='];
+
         foreach ($disallowedWords as $word) {
             if (stripos($value, $word) !== false) {
-                return false; 
+                return false;
             }
         }
-        return true; 
+        return true;
     }
     /**
      * Get the validation error message.

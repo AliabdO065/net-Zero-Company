@@ -65,14 +65,11 @@
 						<div class="site-branding-wrap">
 							<div class="site-branding-left">
 															</div> <!-- .site-branding-left -->
-							
+
 							<div class="site-branding-center">
 																				<h1 class="site-title">
 													<a href="{{route('fronted.index')}}" rel="home">
-														<span class="screen-reader-text">
-															energify														</span>
-														<span class="site-title-text">
-															energify														</span>
+
 													</a>
 												</h1> <!-- .site-title -->
 																			<p class="site-description">
@@ -82,39 +79,45 @@
 															</div> <!-- .site-branding-right -->
 						</div> <!-- .site-branding-wrap -->
 					</div> <!-- .site-branding -->
-					
-					<nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
-						<div class="menu-wrap">
-							<div class="layout-medium">
-								<a class="menu-toggle">
-									<span class="lines"></span>
-								</a> <!-- .menu-toggle -->
-								<div class="nav-menu"><ul id="menu-main-menu" class=""><li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-847"><a href="{{route('fronted.index')}}">Home</a></li>
-<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-993 current_page_item menu-item-1001"><a href="{{route('fronted.about')}}" aria-current="page">About Us</a></li>
-<li id="menu-item-1247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247"><a href="{{route('fronted.services')}}">Services</a></li>
-<li id="menu-item-1729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729"><a href="{{route('fronted.projects')}}">Projects</a></li>
-<li id="menu-item-6411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6411"><a href="{{route('fronted.news')}}">News</a></li>
-<li id="menu-item-1000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000"><a href="{{route('fronted.contact')}}">Contact</a></li>
-</ul></div>											<a class="search-toggle toggle-link"></a>
-											
-											<div class="search-container">
-												<div class="search-box">
-													<form class="search-form" method="get" action="https://themes.pixelwars.org/energify/demo-01/">
-														<label>
+
+                    <nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
+                        <div class="menu-wrap">
+                            <div class="layout-medium">
+                                <a class="menu-toggle">
+                                    <span class="lines"></span>
+                                    <a href="{{route('fronted.index')}}" rel="home" class="logo-img">
+                                        <img class="logo-img" src="{{asset('dashboard/assets/logo.png')}}">
+                                    </a>
+                                </a>
+                                <!-- .menu-toggle -->
+                                <div class="nav-menu"><ul id="menu-main-menu" class="">
+                                        <li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-11 current_page_item menu-item-847">
+                                            <a href="{{route('fronted.index')}}" aria-current="page">Home</a></li>
+                                        <li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001 current-menu-item "><a href="{{route('fronted.about')}}">About Us</a></li>
+                                        <li id="menu-item-1247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247"><a href="{{route('fronted.services')}}">Services</a></li>
+                                        <li id="menu-item-1729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729"><a href="{{route('fronted.projects')}}">Projects</a></li>
+                                        <li id="menu-item-6411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6411"><a href="{{route('fronted.news')}}">News</a></li>
+                                        <li id="menu-item-1000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000"><a href="{{route('fronted.contact')}}">Contact</a></li>
+                                    </ul></div>											<a class="search-toggle toggle-link"></a>
+
+                                <div class="search-container">
+                                    <div class="search-box">
+                                        <form class="search-form" method="get" action="https://themes.pixelwars.org/energify/demo-01/">
+                                            <label>
 															<span>
 																Search for															</span>
-															<input type="search" id="search-field" name="s" placeholder="type and hit enter">
-														</label>
-														<input type="submit" class="search-submit" value="Search">
-													</form> <!-- .search-form -->
-												</div> <!-- .search-box -->
-											</div> <!-- .search-container -->
-																	</div> <!-- .layout-medium -->
-						</div> <!-- .menu-wrap -->
-					</nav> <!-- #site-navigation .main-navigation .site-navigation -->
+                                                <input type="search" id="search-field" name="s" placeholder="type and hit enter">
+                                            </label>
+                                            <input type="submit" class="search-submit" value="Search">
+                                        </form> <!-- .search-form -->
+                                    </div> <!-- .search-box -->
+                                </div> <!-- .search-container -->
+                            </div> <!-- .layout-medium -->
+                        </div> <!-- .menu-wrap -->
+                    </nav> <!-- #site-navigation .main-navigation .site-navigation -->
 				</div> <!-- .header-wrap-inner -->
 			</div> <!-- .header-wrap -->
-        </header> <!-- #masthead .site-header -->	
+        </header> <!-- #masthead .site-header -->
 			<div data-elementor-type="wp-page" data-elementor-id="993" class="elementor elementor-993">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-3e6d302f elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="3e6d302f" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
@@ -145,7 +148,7 @@
 			?>
 			@foreach ($header as $item)
 			<span class="qodef-e-word-holder">{{$item}}</span>
-			@endforeach	
+			@endforeach
 	</h1>
 </div>
 		</div>
@@ -197,7 +200,7 @@
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.17.0 - 08-11-2023 */
 .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
-</style>	
+</style>
 <p>
 	{{$main['details']}}</p>						</div>
 				</div>
@@ -216,14 +219,14 @@
 		<svg class="qodef-swiper-arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;"><line x1="0.5" y1="16" x2="33.5" y2="16"/><line x1="0.3" y1="16.5" x2="16.2" y2="0.7"/><line x1="0" y1="15.4" x2="16.2" y2="31.6"/></svg>	</div>
 	<div class="qodef-nav-next">
 		<svg class="qodef-swiper-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;"><line x1="0" y1="16" x2="33" y2="16"/><line x1="17.3" y1="0.7" x2="33.2" y2="16.5"/><line x1="17.3" y1="31.6" x2="33.5" y2="15.4"/></svg>	</div>
-	
+
 		<div class="qodef-grid-inner">
 	{{-- //////////////////// --}}
 	@if ( !empty($history[0]))
 	<?php $c=1; ?>
 			@foreach ($history as $i => $slides)
-										
-						<?php 
+
+						<?php
 								$string = $slides;
 								$pairs = explode('#x#', $string);
 								$slide = [];
@@ -232,9 +235,9 @@
 									$slide[$key] = $value;
 								}
 								if($slide['status'] == 'disappear') continue;
-			
+
 						?>
-			<div class="qodef-e qodef-e-item qodef-grid-item elementor-repeater-item-1b6da1d 
+			<div class="qodef-e qodef-e-item qodef-grid-item elementor-repeater-item-1b6da1d
 			<?php if($c % 2 == 0){ echo "qodef-obverse"; $c++ ;} else {echo  "qodef-reverse" ; $c++;} ?>">
 	<div class="qodef-e-line-holder">
 		<span class="qodef-e-line"></span>
@@ -258,12 +261,12 @@
 			</div>
 	</div>
 	</div>
-	
+
 @endforeach
 @endif
 
 	</div>
-	
+
 </div>
 		</div>
 				</div>
@@ -309,9 +312,9 @@
 <?php $counter = 1 ; ?>
 		@if ( !empty($services[1]))
 			@foreach ($services as $i => $slides)
-										
-						<?php 
-						
+
+						<?php
+
 									if($i == 0 ) continue;
 								$string = $slides;
 								$pairs = explode('#x#', $string);
@@ -321,15 +324,15 @@
 									$slide[$key] = $value;
 								}
 								if($slide['status'] == 'disappear') continue;
-			
+
 						?>
 @if ($counter%2==1)
 	<?php $counter++ ?>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-733423e8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="733423e8" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					
-					
-					
+
+
+
 							<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-11aae89f" data-id="11aae89f" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-220a64b9 elementor-widget elementor-widget-qi_addons_for_elementor_parallax_images" data-id="220a64b9" data-element_type="widget" data-widget_type="qi_addons_for_elementor_parallax_images.default">
@@ -357,7 +360,7 @@
 							<p>
 								{{$slide['title1']}}
 							</p>
-								
+
 							<p>
 								{{$slide['title2']}}
 							</p>						</div>
@@ -366,9 +369,9 @@
 		</div>
 							</div>
 		</section>
-	
 
-		
+
+
 	@else
 	<?php $counter++ ?>
 
@@ -381,10 +384,10 @@
 			<p>
 				{{$slide['title1']}}
 			</p>
-				
+
 			<p>
 				{{$slide['title2']}}
-			</p>	
+			</p>
 				</div>
 		</div>
 			</div>
@@ -429,9 +432,9 @@
 </section>
 @endif
 @endforeach
-				
+
 @endif
-			
+
 
 
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-6d681e0b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6d681e0b" data-element_type="section">
@@ -441,7 +444,7 @@
 								<div class="elementor-element elementor-element-c557720 elementor-widget elementor-widget-qi_addons_for_elementor_animated_text" data-id="c557720" data-element_type="widget" data-widget_type="qi_addons_for_elementor_animated_text.default">
 				<div class="elementor-widget-container">
 			<div class="qodef-shortcode qodef-m  qodef-qi-animated-text qodef--animated-by-letter qodef--alignment-left qodef-qi--has-appear qodef--appear-from-right" >
-		
+
 				<?php
 				$string = $images[0];
 				$pairs = explode('#x#', $string);
@@ -455,7 +458,7 @@
 				<h1 class="qodef-m-title">
 					@foreach ($header as $item)
 					<span class="qodef-e-word-holder">{{$item}}</span>
-					@endforeach	
+					@endforeach
 				</h1>
 </div>
 		</div>
@@ -485,7 +488,7 @@
 	<div class="qodef-e-inner">
 			<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img1'])}}" data-type="image" data-fslightbox="gallery-1">
 			<img width="1920" height="954" src="{{asset($slide['img1'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img1'])}} 1920w,{{asset($slide['img1'])}} 300w, {{asset($slide['img1'])}} 1024w,{{asset($slide['img1'])}} 768w, 
+			srcset="{{asset($slide['img1'])}} 1920w,{{asset($slide['img1'])}} 300w, {{asset($slide['img1'])}} 1024w,{{asset($slide['img1'])}} 768w,
 			{{asset($slide['img1'])}} 1107w,{{asset($slide['img1'])}} 1060w,{{asset($slide['img1'])}} 1536w,
 			{{asset($slide['img1'])}} 550w,{{asset($slide['img1'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
 			</div>
@@ -494,7 +497,7 @@
 	<div class="qodef-e-inner">
 		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img2'])}}" data-type="image" data-fslightbox="gallery-1">
 			<img width="1920" height="954" src="{{asset($slide['img2'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img2'])}} 1920w,{{asset($slide['img2'])}} 300w, {{asset($slide['img2'])}} 1024w,{{asset($slide['img2'])}} 768w, 
+			srcset="{{asset($slide['img2'])}} 1920w,{{asset($slide['img2'])}} 300w, {{asset($slide['img2'])}} 1024w,{{asset($slide['img2'])}} 768w,
 			{{asset($slide['img2'])}} 1107w,{{asset($slide['img2'])}} 1060w,{{asset($slide['img2'])}} 1536w,
 			{{asset($slide['img2'])}} 550w,{{asset($slide['img2'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
 			</div>
@@ -503,7 +506,7 @@
 	<div class="qodef-e-inner">
 		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img3'])}}" data-type="image" data-fslightbox="gallery-1">
 			<img width="1920" height="954" src="{{asset($slide['img3'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img3'])}} 1920w,{{asset($slide['img3'])}} 300w, {{asset($slide['img3'])}} 1024w,{{asset($slide['img3'])}} 768w, 
+			srcset="{{asset($slide['img3'])}} 1920w,{{asset($slide['img3'])}} 300w, {{asset($slide['img3'])}} 1024w,{{asset($slide['img3'])}} 768w,
 			{{asset($slide['img3'])}} 1107w,{{asset($slide['img3'])}} 1060w,{{asset($slide['img3'])}} 1536w,
 			{{asset($slide['img3'])}} 550w,{{asset($slide['img3'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a></div>
 </div>
@@ -511,7 +514,7 @@
 	<div class="qodef-e-inner">
 		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img4'])}}" data-type="image" data-fslightbox="gallery-1">
 			<img width="1920" height="954" src="{{asset($slide['img4'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img4'])}} 1920w,{{asset($slide['img4'])}} 300w, {{asset($slide['img4'])}} 1024w,{{asset($slide['img4'])}} 768w, 
+			srcset="{{asset($slide['img4'])}} 1920w,{{asset($slide['img4'])}} 300w, {{asset($slide['img4'])}} 1024w,{{asset($slide['img4'])}} 768w,
 			{{asset($slide['img4'])}} 1107w,{{asset($slide['img4'])}} 1060w,{{asset($slide['img4'])}} 1536w,
 			{{asset($slide['img4'])}} 550w,{{asset($slide['img4'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a></div>
 </div>
@@ -519,7 +522,7 @@
 	<div class="qodef-e-inner">
 		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img5'])}}" data-type="image" data-fslightbox="gallery-1">
 			<img width="1920" height="954" src="{{asset($slide['img5'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img5'])}} 1920w,{{asset($slide['img5'])}} 300w, {{asset($slide['img5'])}} 1024w,{{asset($slide['img5'])}} 768w, 
+			srcset="{{asset($slide['img5'])}} 1920w,{{asset($slide['img5'])}} 300w, {{asset($slide['img5'])}} 1024w,{{asset($slide['img5'])}} 768w,
 			{{asset($slide['img5'])}} 1107w,{{asset($slide['img5'])}} 1060w,{{asset($slide['img5'])}} 1536w,
 			{{asset($slide['img5'])}} 550w,{{asset($slide['img5'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a></div>
 </div>
@@ -527,7 +530,7 @@
 	<div class="qodef-e-inner">
 		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img6'])}}" data-type="image" data-fslightbox="gallery-1">
 			<img width="1920" height="954" src="{{asset($slide['img6'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img6'])}} 1920w,{{asset($slide['img6'])}} 300w, {{asset($slide['img6'])}} 1024w,{{asset($slide['img6'])}} 768w, 
+			srcset="{{asset($slide['img6'])}} 1920w,{{asset($slide['img6'])}} 300w, {{asset($slide['img6'])}} 1024w,{{asset($slide['img6'])}} 768w,
 			{{asset($slide['img6'])}} 1107w,{{asset($slide['img6'])}} 1060w,{{asset($slide['img6'])}} 1536w,
 			{{asset($slide['img6'])}} 550w,{{asset($slide['img6'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a></div>
 </div>
@@ -560,7 +563,7 @@
 			?>
 			@foreach ($header as $item)
 			<span class="qodef-e-word-holder">{{$item}}</span>
-			@endforeach	
+			@endforeach
 	</h1>
 </div>
 		</div>
@@ -577,8 +580,8 @@
 					<div class="elementor-container elementor-column-gap-default">
 						@if ( !empty($masters[1]))
 						@foreach ($masters as $i => $slides)
-									
-						<?php 
+
+						<?php
 								if($i == 0 ) continue;
 								$string = $slides;
 								$pairs = explode('#x#', $string);
@@ -588,8 +591,8 @@
 									$slide[$key] = $value;
 								}
 								if($slide['status']=='disappear') continue;
-						?>					
-					
+						?>
+
 							<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5a3eecc7" data-id="5a3eecc7" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-19f749bf animated-slow elementor-invisible elementor-widget elementor-widget-qi_addons_for_elementor_team_member" data-id="19f749bf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:&quot;200&quot;}" data-widget_type="qi_addons_for_elementor_team_member.default">
@@ -598,7 +601,7 @@
 	<div class="qodef-m-inner">
 		<div class="qodef-m-image">
 				<div class="qodef-m-media-image">
-					<img width="800" height="889" src="{{asset($slide['img'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy" 
+					<img width="800" height="889" src="{{asset($slide['img'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy"
 					srcset="{{asset($slide['img'])}} 800w, {{asset($slide['img'])}} 270w, {{asset($slide['img'])}} 768w, {{asset($slide['img'])}} 495w, {{asset($slide['img'])}} 550w, {{asset($slide['img'])}} 450w" sizes="(max-width: 800px) 100vw, 800px" />
 					</div>
 		</div>
@@ -632,7 +635,7 @@
 					</div>
 		</div>
 		@endforeach
-							
+
 		@endif
 							</div>
 		</section>
@@ -660,8 +663,8 @@
 				<h1 class="qodef-m-title">
 			@foreach ($header as $item)
 			<span class="qodef-e-word-holder">{{$item}}</span>
-			@endforeach	
-		
+			@endforeach
+
 	</h1>
 </div>
 		</div>
@@ -692,19 +695,19 @@
 					</span>
 				</h1>
 </div>
-		</div>  
+		</div>
 				</div>
 				<div class="elementor-element elementor-element-138239e2 animated-slow elementor-invisible elementor-widget elementor-widget-qi_addons_for_elementor_typeout_text" data-id="138239e2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="qi_addons_for_elementor_typeout_text.default">
 				<div class="elementor-widget-container">
-						<?php 		
+						<?php
 					    $header = explode(',', $contact['words']);
 					    // echo($contact['words']);die;
-					    ?>	
+					    ?>
 					<div class="qodef-shortcode qodef-m  qodef-qi-typeout-text"
 					data-strings="[
 						@for ($i = 0; $i < count($header); $i++)
-						&quot;{{$header[$i]}}&quot;,&quot;{{$header[$i]}}&quot;		
-		                @endfor					
+						&quot;{{$header[$i]}}&quot;,&quot;{{$header[$i]}}&quot;
+		                @endfor
 					]">
 					<h2 class="qodef-m-text">
 						{{$contact['wordtitle']}}				<span class="qodef-typeout-holder">
@@ -733,10 +736,10 @@
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
 
-								
+
 				@if ( !empty($footer[0]))
 					@foreach ($footer as $item)
-					<?php 
+					<?php
 					$string = $item;
 					$pairs = explode('#x#', $string);
 					$slide = [];
@@ -785,20 +788,20 @@
 				</div>
 					</div>
 		</div>
-	
+
 @endforeach
-@endif	
+@endif
 							</div>
 		</section>
 							</div>
 		        <footer id="colophon" class="site-footer" role="contentinfo">
 									<div class="site-info">
-							
+
 <p>©  {{now()->year}} Netzero Company</p>
 						</div> <!-- .site-info -->
 							</footer> <!-- #colophon .site-footer -->
 	</div>
-    
+
 	<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='{{asset('fronted/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min52d5.css?ver=5.15.3')}}' type='text/css' media='all' />
 <link rel='stylesheet' id='e-animations-css' href='{{asset('fronted/wp-content/plugins/elementor/assets/lib/animations/animations.min8864.css?ver=3.17.3')}}' type='text/css' media='all' />
 

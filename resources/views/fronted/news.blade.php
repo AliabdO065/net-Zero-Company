@@ -6,6 +6,7 @@
 <link rel="https://api.w.org/" href="{{asset('fronted/wp-json/index.html')}}" />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="{{asset('fronted/xmlrpc0db0.php?rsd')}}" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{{asset('fronted/wp-includes/wlwmanifest.xml')}}" />
+<link style="{{asset('dashboard/assets/stylesheets/custom.css')}}">
 <meta name="generator" content="WordPress 6.2.3" />
 <meta name="generator" content="Elementor 3.17.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
 <style id="wpforms-css-vars-root">
@@ -49,30 +50,30 @@
 						<div class="site-branding-wrap">
 							<div class="site-branding-left">
 															</div> <!-- .site-branding-left -->
-							
+
 							<div class="site-branding-center">
-																				<h1 class="site-title" style="color: black">
-													<a href="{{route('fronted.index')}}" rel="home">
-														<span class="screen-reader-text">
-															energify														</span>
-														<span class="site-title-text">
-															energify														</span>
-													</a>
-												</h1> <!-- .site-title -->
+                                <a class="menu-toggle">
+                                    <span class="lines"></span>
+
+                                </a> <!-- .site-title -->
+
 																			<p class="site-description">
 																	</p> <!-- .site-description -->
 							</div> <!-- .site-branding-center -->
+
+                                <a href="{{route('fronted.index')}}" rel="home" class="logo-img">
+                                    <img class="logo-img" src="{{asset('dashboard/assets/logo.png')}}">
+                                </a>
+
 							<div class="site-branding-right">
 															</div> <!-- .site-branding-right -->
 						</div> <!-- .site-branding-wrap -->
 					</div> <!-- .site-branding -->
-					
+
 					<nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
 						<div class="menu-wrap">
 							<div class="layout-medium" style="color: black">
-								<a class="menu-toggle">
-									<span class="lines"></span>
-								</a> <!-- .menu-toggle -->
+
 <div class="nav-menu"><ul id="menu-main-menu" class=""><li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-847"><a href="{{route('fronted.index')}}">Home</a></li>
 <li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="{{route('fronted.index')}}">About Us</a></li>
 <li id="menu-item-1247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247"><a href="{{route('fronted.services')}}">Services</a></li>
@@ -80,7 +81,7 @@
 <li id="menu-item-6411" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5622 current_page_item current_page_parent menu-item-6411"><a href="{{route('fronted.news')}}" aria-current="page">News</a></li>
 <li id="menu-item-1000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000"><a href="{{route('fronted.contact')}}">Contact</a></li>
 </ul></div>											<a class="search-toggle toggle-link"></a>
-											
+
 											<div class="search-container">
 												<div class="search-box">
 													<form class="search-form" method="get" action="https://themes.pixelwars.org/energify/demo-01/">
@@ -108,14 +109,14 @@
 											{{-- ////////////////////////////////////////////////modify --}}
 						<h1 style="margin-top: 100px;" class="entry-title">
 							<span class="cat-title">
-								<?php 
-									
+								<?php
+
 									if($word == 'INSIGHTS'){
 										echo'INSIGHTS';
 									}else {
 										echo'News';
 									}
-									
+
 									?>
 							</span> <!-- .cat-title -->						</h1> <!-- .entry-title -->
 					</header> <!-- .entry-header -->
@@ -124,8 +125,8 @@
 					<div class="blog-stream blog-grid blog-small masonry " data-layout="masonry" data-item-width="360">
 			@if (!empty($content[0]))
 			@foreach ($content as $i => $slides)
-							
-					<?php 
+
+					<?php
 							$string = $slides;
 							$pairs = explode('#x#', $string);
 							$slide = [];
@@ -156,7 +157,7 @@
 																							<div class="entry-meta below-title">
 														<span class="cat-links">
 									<span class="prefix">
-										in					
+										in
 									@if ($slide['category']=='NEWS')
 									</span> <a href="{{route('fronted.onlynews')}}" rel="category tag">{{$slide['category']}}</a>				</span> <!-- .cat-links -->
 									@else
@@ -174,15 +175,15 @@
 							</span> <!-- .posted-on -->
 									<span class="entry-share">
 								<span class="entry-share-text">Share</span> <!-- .entry-share-text -->
-								
+
 								<span class="entry-share-wrap">
 									<span class="entry-share-inner-wrap">
 										<a class="share-facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/sharer.php?u=https://themes.pixelwars.org/energify/demo-01/architectural-heritage/&amp;t=Solar%20Energy%20Surpasses%20Milestone" title="Share this post on Facebook">Facebook</a>
-										
+
 										<a class="share-twitter" rel="nofollow" target="_blank" href="https://twitter.com/intent/tweet?text=Currently%20reading:%20'Solar%20Energy%20Surpasses%20Milestone'%20on%20https://themes.pixelwars.org/energify/demo-01/architectural-heritage/" title="Tweet this post to your followers">Twitter</a>
-										
+
 										<a class="share-pinterest" rel="nofollow" target="_blank" href="https://pinterest.com/pin/create/button/?url=https://themes.pixelwars.org/energify/demo-01/architectural-heritage/&amp;media=https://themes.pixelwars.org/energify/demo-01/wp-content/uploads/sites/2/2023/07/solar-container-unit-3d-rendering-concept-white-industrial-battery-energy-storage-container-with-mounted-black-solar-panels-situated-fresh-green-grass-late-sunny-weather.jpg&amp;description=Solar%20Energy%20Surpasses%20Milestone" title="Pin it">Pinterest</a>
-										
+
 										<a class="share-mail" rel="nofollow" target="_blank" href="mailto:?subject=I%20wanted%20you%20to%20see%20this%20post&#038;body=Check%20out%20this%20post:%20Solar%20Energy%20Surpasses%20Milestone%20-%20https://themes.pixelwars.org/energify/demo-01/architectural-heritage/" title="Email this post to a friend">Email</a>
 									</span> <!-- .entry-share-inner-wrap -->
 								</span> <!-- .entry-share-wrap -->
@@ -196,9 +197,9 @@
 																													</div> <!-- .hentry-middle -->
 															</div> <!-- .hentry-wrap -->
 				</article>
-				
-			@endforeach						
-					@endif										
+
+			@endforeach
+					@endif
 
 
 
@@ -212,10 +213,10 @@
 
         <footer id="colophon" class="site-footer" role="contentinfo">
 									<div class="site-info">
-							
+
 <p>©2  {{now()->year}} Netzero Company</p>
 						</div> <!-- .site-info -->
 							</footer> <!-- #colophon .site-footer -->
 	</div>
-    
+
 @endsection

@@ -62,14 +62,11 @@
 						<div class="site-branding-wrap">
 							<div class="site-branding-left">
 															</div> <!-- .site-branding-left -->
-							
+
 							<div class="site-branding-center">
 																				<h1 class="site-title">
 													<a href="{{route('fronted.index')}}" rel="home">
-														<span class="screen-reader-text">
-															energify														</span>
-														<span class="site-title-text">
-															energify														</span>
+
 													</a>
 												</h1> <!-- .site-title -->
 																			<p class="site-description">
@@ -79,36 +76,42 @@
 															</div> <!-- .site-branding-right -->
 						</div> <!-- .site-branding-wrap -->
 					</div> <!-- .site-branding -->
-					
-					<nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
-						<div class="menu-wrap">
-							<div class="layout-medium">
-								<a class="menu-toggle">
-									<span class="lines"></span>
-								</a> <!-- .menu-toggle -->
-								<div class="nav-menu"><ul id="menu-main-menu" class=""><li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-847"><a href="{{route('fronted.index')}}">Home</a></li>
-<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="{{route('fronted.about')}}">About Us</a></li>
-<li id="menu-item-1247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247"><a href="{{route('fronted.services')}}">Services</a></li>
-<li id="menu-item-1729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729"><a href="{{route('fronted.projects')}}">Projects</a></li>
-<li id="menu-item-6411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6411"><a href="{{route('fronted.news')}}">News</a></li>
-<li id="menu-item-1000" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-998 current_page_item menu-item-1000"><a href="{{route('fronted.contact')}}" aria-current="page">Contact</a></li>
-</ul></div>											<a class="search-toggle toggle-link"></a>
-											
-											<div class="search-container">
-												<div class="search-box">
-													<form class="search-form" method="get" action="https://themes.pixelwars.org/energify/demo-01/">
-														<label>
+
+                    <nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
+                        <div class="menu-wrap">
+                            <div class="layout-medium">
+                                <a class="menu-toggle">
+                                    <span class="lines"></span>
+                                    <a href="{{route('fronted.index')}}" rel="home" class="logo-img">
+                                        <img class="logo-img" src="{{asset('dashboard/assets/logo.png')}}">
+                                    </a>
+                                </a>
+                                <!-- .menu-toggle -->
+                                <div class="nav-menu"><ul id="menu-main-menu" class="">
+                                        <li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-11 current_page_item menu-item-847">
+                                            <a href="{{route('fronted.index')}}" aria-current="page">Home</a></li>
+                                        <li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001  "><a href="{{route('fronted.about')}}">About Us</a></li>
+                                        <li id="menu-item-1247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247"><a href="{{route('fronted.services')}}">Services</a></li>
+                                        <li id="menu-item-1729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729"><a href="{{route('fronted.projects')}}">Projects</a></li>
+                                        <li id="menu-item-6411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6411"><a href="{{route('fronted.news')}}">News</a></li>
+                                        <li id="menu-item-1000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000 current-menu-item"><a href="{{route('fronted.contact')}}">Contact</a></li>
+                                    </ul></div>											<a class="search-toggle toggle-link"></a>
+
+                                <div class="search-container">
+                                    <div class="search-box">
+                                        <form class="search-form" method="get" action="https://themes.pixelwars.org/energify/demo-01/">
+                                            <label>
 															<span>
 																Search for															</span>
-															<input type="search" id="search-field" name="s" placeholder="type and hit enter">
-														</label>
-														<input type="submit" class="search-submit" value="Search">
-													</form> <!-- .search-form -->
-												</div> <!-- .search-box -->
-											</div> <!-- .search-container -->
-																	</div> <!-- .layout-medium -->
-						</div> <!-- .menu-wrap -->
-					</nav> <!-- #site-navigation .main-navigation .site-navigation -->
+                                                <input type="search" id="search-field" name="s" placeholder="type and hit enter">
+                                            </label>
+                                            <input type="submit" class="search-submit" value="Search">
+                                        </form> <!-- .search-form -->
+                                    </div> <!-- .search-box -->
+                                </div> <!-- .search-container -->
+                            </div> <!-- .layout-medium -->
+                        </div> <!-- .menu-wrap -->
+                    </nav> <!-- #site-navigation .main-navigation .site-navigation -->
 				</div> <!-- .header-wrap-inner -->
 			</div> <!-- .header-wrap -->
         </header> <!-- #masthead .site-header -->		<div data-elementor-type="wp-page" data-elementor-id="998" class="elementor elementor-998">
@@ -189,7 +192,7 @@
 				<div class="elementor-widget-container">
 			<div class="qodef-shortcode qodef-m  qodef-qi-wp-forms ">
 	<div class="wpforms-container wpforms-container-full wpforms-render-modern" id="wpforms-8584">
-		<form id="wpforms-form-8584" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="8584" method="post" 
+		<form id="wpforms-form-8584" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="8584" method="post"
 		enctype="multipart/form-data" action="{{route('dashboard.contact.contact.message')}}"
 		data-token="a932aa2d59145b2cb303770074e40506">
 		@csrf
@@ -197,26 +200,26 @@
 		<div class="wpforms-hidden" id="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</div>
 		<div class="wpforms-field-container">
 			<div id="wpforms-8584-field_3-container" class="wpforms-field wpforms-field-text" data-field-id="3">
-				<label class="wpforms-field-label wpforms-label-hide" for="wpforms-8584-field_3" aria-hidden="false">Name 
+				<label class="wpforms-field-label wpforms-label-hide" for="wpforms-8584-field_3" aria-hidden="false">Name
 					<span class="wpforms-required-label" aria-hidden="true">*</span></label>
 					<input type="text" id="wpforms-8584-field_3" class="wpforms-field-large wpforms-field-required" name="name"
-					    placeholder="Name" aria-errormessage="wpforms-8584-field_3-error" required></div><div id="wpforms-8584-field_1-container" 
+					    placeholder="Name" aria-errormessage="wpforms-8584-field_3-error" required></div><div id="wpforms-8584-field_1-container"
 						class="wpforms-field wpforms-field-email" data-field-id="1">
 				<label class="wpforms-field-label wpforms-label-hide" for="wpforms-8584-field_1" aria-hidden="false">Email
 					<span class="wpforms-required-label" aria-hidden="true">*</span></label>
-					<input type="email" id="wpforms-8584-field_1" class="wpforms-field-large wpforms-field-required" name="email" 
+					<input type="email" id="wpforms-8584-field_1" class="wpforms-field-large wpforms-field-required" name="email"
 					placeholder="Email" spellcheck="false" aria-errormessage="wpforms-8584-field_1-error" required>
 					</div><div id="wpforms-8584-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2">
-				<label class="wpforms-field-label wpforms-label-hide" for="wpforms-8584-field_2" aria-hidden="false">Your Message 
-					<span class="wpforms-required-label" aria-hidden="true">*</span></label><textarea id="wpforms-8584-field_2" 
-					class="wpforms-field-large wpforms-field-required" name="message" placeholder="Your Message" 
+				<label class="wpforms-field-label wpforms-label-hide" for="wpforms-8584-field_2" aria-hidden="false">Your Message
+					<span class="wpforms-required-label" aria-hidden="true">*</span></label><textarea id="wpforms-8584-field_2"
+					class="wpforms-field-large wpforms-field-required" name="message" placeholder="Your Message"
 					aria-errormessage="wpforms-8584-field_2-error" required></textarea></div></div><!-- .wpforms-field-container -->
 					<div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="8584">
 						<input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="998">
 
 				<button type="submit" name="wpforms[submit]" id="wpforms-submit-8584" class="wpforms-submit" data-alt-text="Sending..."
 				 data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button><img decoding="async"
-				  src="../wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner" 
+				  src="../wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg" class="wpforms-submit-spinner"
 				  style="display: none;" width="26" height="26" alt="Loading"></div></form></div>  <!-- .wpforms-container --></div>
 		</div>
 				</div>
@@ -227,10 +230,10 @@
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-f3c79cf elementor-section-stretched elementor-section-height-min-height elementor-section-items-top elementor-section-boxed elementor-section-height-default" data-id="f3c79cf" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-default">
-								
+
 								@if ( !empty($footer[0]))
 								@foreach ($footer as $item)
-								<?php 
+								<?php
 								$string = $item;
 								$pairs = explode('#x#', $string);
 								$slide = [];
@@ -240,10 +243,10 @@
 								}
 								if($slide['status']== 'disappear')  continue;
 						?>
-						
+
 								<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-807a587" data-id="807a587" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-			
-			
+
+
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-111e739 elementor-widget elementor-widget-heading" data-id="111e739" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -282,21 +285,21 @@
 				</div>
 			</div>
 
-			
+
 		</div>
 		@endforeach
-		@endif	
+		@endif
 							</div>
 		</section>
 							</div>
 		        <footer id="colophon" class="site-footer" role="contentinfo">
 									<div class="site-info">
-							
+
 <p>©  {{now()->year}} Netzero Company</p>
 						</div> <!-- .site-info -->
 							</footer> <!-- #colophon .site-footer -->
 	</div>
-    
+
 	<link rel='stylesheet' id='e-animations-css' href='.{{asset('fronted/wp-content/plugins/elementor/assets/lib/animations/animations.min8864.css?ver=3.17.3')}}' type='text/css' media='all' />
 <link rel='stylesheet' id='wpforms-modern-full-css' href='{{asset('fronted/wp-content/plugins/wpforms-lite/assets/css/frontend/modern/wpforms-full.minda65.css?ver=1.8.4.1')}}' type='text/css' media='all' />
 

@@ -1,1 +1,19 @@
 /* put your own styles to customize and override the theme */
+.top-bar {
+    background: #323232;
+}
+.stacked-menu>.menu>.menu-item.has-active>.menu-link {
+    color:#FDAD04;
+
+}
+.stacked-menu .menu-item.has-active>.menu-link .menu-icon {
+    color:#323232;
+}
+a.logo-img {
+    height: 100%;
+    width: 64%;
+}
+a.logo-img img {
+    height: 100%;
+    width: 100%;
+}
