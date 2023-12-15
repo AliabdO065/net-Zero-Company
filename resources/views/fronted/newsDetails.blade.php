@@ -1,0 +1,368 @@
+@extends('fronted.layouts.layout')
+@section('content')
+<link rel='stylesheet' id='swiper-css' href='{{asset('fronted/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css?ver=8.4.5')}}' type='text/css' media='all' />
+<script type='text/javascript' src='{{asset('fronted/wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4')}}' id='jquery-core-js'></script>
+<script type='text/javascript' src='{{asset('fronted/wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0')}}' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="{{asset('fronted/wp-json/index.html')}}" />
+<link rel="alternate" type="application/json" href="{{asset('fronted/wp-json/wp/v2/posts/5652.json')}}" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="{{asset('fronted/xmlrpc0db0.php?rsd')}}" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{{asset('fronted/wp-includes/wlwmanifest.xml')}}" />
+<meta name="generator" content="WordPress 6.2.3" />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../indexa51d.html?p=5652' />
+<link rel="alternate" type="application/json+oembed" href="{{asset('fronted/wp-json/oembed/1.0/embedbb01.json?url=https%3A%2F%2Fthemes.pixelwars.org%2Fenergify%2Fdemo-01%2Fsmart-cities-of-tomorrow%2F')}}" />
+<link rel="alternate" type="text/xml+oembed" href="{{asset('fronted/wp-json/oembed/1.0/embed58d5?url=https%3A%2F%2Fthemes.pixelwars.org%2Fenergify%2Fdemo-01%2Fsmart-cities-of-tomorrow%2F&amp;format=xml')}}" />
+<meta name="generator" content="Elementor 3.17.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<style id="wpforms-css-vars-root">
+				:root {
+					--wpforms-field-border-radius: 3px;
+--wpforms-field-background-color: #ffffff;
+--wpforms-field-border-color: rgba( 0, 0, 0, 0.25 );
+--wpforms-field-text-color: rgba( 0, 0, 0, 0.7 );
+--wpforms-label-color: rgba( 0, 0, 0, 0.85 );
+--wpforms-label-sublabel-color: rgba( 0, 0, 0, 0.55 );
+--wpforms-label-error-color: #d63637;
+--wpforms-button-border-radius: 3px;
+--wpforms-button-background-color: #066aab;
+--wpforms-button-text-color: #ffffff;
+--wpforms-field-size-input-height: 43px;
+--wpforms-field-size-input-spacing: 15px;
+--wpforms-field-size-font-size: 16px;
+--wpforms-field-size-line-height: 19px;
+--wpforms-field-size-padding-h: 14px;
+--wpforms-field-size-checkbox-size: 16px;
+--wpforms-field-size-sublabel-spacing: 5px;
+--wpforms-field-size-icon-size: 1;
+--wpforms-label-size-font-size: 16px;
+--wpforms-label-size-line-height: 19px;
+--wpforms-label-size-sublabel-font-size: 14px;
+--wpforms-label-size-sublabel-line-height: 17px;
+--wpforms-button-size-font-size: 17px;
+--wpforms-button-size-height: 41px;
+--wpforms-button-size-padding-h: 15px;
+--wpforms-button-size-margin-top: 10px;
+
+				}
+			</style></head>
+
+<body class="post-template-default single single-post postid-5652 single-format-standard qodef-qi--no-touch qi-addons-for-elementor-1.6.5 elementor-default elementor-kit-8">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>    <div id="page" class="hfeed site">
+		        <header id="masthead" class="site-header" role="banner">
+						<div class="header-wrap" data-parallax-video="">
+				<div class="header-wrap-inner">
+					<div class="site-branding">
+						<div class="site-branding-wrap">
+							<div class="site-branding-left">
+															</div> <!-- .site-branding-left -->
+							
+							<div class="site-branding-center">
+																				<h1 class="site-title">
+													<a href="{{route('fronted.index')}}" rel="home" style="color: black">
+														<span class="screen-reader-text">
+															energify														</span>
+														<span class="site-title-text">
+															energify														</span>
+													</a>
+												</h1> <!-- .site-title -->
+																			<p class="site-description">
+																	</p> <!-- .site-description -->
+							</div> <!-- .site-branding-center -->
+							<div class="site-branding-right" >
+															</div> <!-- .site-branding-right -->
+						</div> <!-- .site-branding-wrap -->
+					</div> <!-- .site-branding -->
+					
+					<nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
+						<div class="menu-wrap" style="color: black">
+							<div class="layout-medium">
+								<a class="menu-toggle">
+									<span class="lines"></span>
+								</a> <!-- .menu-toggle -->
+								<div class="nav-menu"><ul id="menu-main-menu" class=""><li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-847"><a href="{{route('fronted.index')}}">Home</a></li>
+<li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="{{route('fronted.about')}}">About Us</a></li>
+<li id="menu-item-1247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1247"><a href="{{route('fronted.services')}}">Services</a></li>
+<li id="menu-item-1729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1729"><a href="{{route('fronted.projects')}}">Projects</a></li>
+<li id="menu-item-6411" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-6411"><a href="{{route('fronted.news')}}">News</a></li>
+<li id="menu-item-1000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000"><a href="{{route('fronted.contact')}}">Contact</a></li>
+</ul></div>											<a class="search-toggle toggle-link"></a>
+											
+											<div class="search-container">
+												<div class="search-box">
+													<form class="search-form" method="get" action="https://themes.pixelwars.org/energify/demo-01/">
+														<label>
+															<span>
+																Search for															</span>
+															<input type="search" id="search-field" name="s" placeholder="type and hit enter">
+														</label>
+														<input type="submit" class="search-submit" value="Search">
+													</form> <!-- .search-form -->
+												</div> <!-- .search-box -->
+											</div> <!-- .search-container -->
+																	</div> <!-- .layout-medium -->
+						</div> <!-- .menu-wrap -->
+					</nav> <!-- #site-navigation .main-navigation .site-navigation -->
+				</div> <!-- .header-wrap-inner -->
+			</div> <!-- .header-wrap -->
+        </header> <!-- #masthead .site-header -->			<section class="top-content-single is-top-content-single-medium">
+				<div class="layout-medium" style="margin-top: 100px;">
+								<div class="post-header post-header-classic is-cat-link-borders-light is-cat-link-rounded">
+							<header class="entry-header" >
+									<div class="entry-meta above-title">
+										<span class="cat-links">
+											<span class="prefix">
+												in					
+											@if ($item['category']=='NEWS')
+											</span> <a href="{{route('fronted.onlynews')}}" rel="category tag">{{$item['category']}}</a>				</span> <!-- .cat-links -->
+											@else
+										</span> <a href="{{route('fronted.onlyinsight')}}" rel="category tag">{{$item['category']}}</a>				</span> <!-- .cat-links -->
+											@endifgory tag">{{$item['category']}}</a>			
+					@endif
+					
+				
+								</div> <!-- .entry-meta .above-title -->
+				<h1 class="entry-title" >{{$item['title']}}</h1>					<div class="entry-meta below-title">
+									<span class="posted-on">
+				<span class="prefix">
+					on				</span>
+				<a href="index.html" rel="bookmark">
+					<time class="entry-date published" datetime="2023-05-18T11:19:31+00:00">
+						May 18, 2023					</time>
+					<time class="updated" datetime="2023-07-11T13:04:42+00:00">
+						{{$item['date']}}					</time>
+				</a>
+			</span> <!-- .posted-on -->
+					<span class="entry-share">
+				<span class="entry-share-text">Share</span> <!-- .entry-share-text -->
+				
+				<span class="entry-share-wrap">
+					<span class="entry-share-inner-wrap">
+						<a class="share-facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/sharer.php?u=https://themes.pixelwars.org/energify/demo-01/smart-cities-of-tomorrow/&amp;t=Solar%20Energy%20in%20Developing%20Countries" title="Share this post on Facebook">Facebook</a>
+						
+						<a class="share-twitter" rel="nofollow" target="_blank" href="https://twitter.com/intent/tweet?text=Currently%20reading:%20'Solar%20Energy%20in%20Developing%20Countries'%20on%20https://themes.pixelwars.org/energify/demo-01/smart-cities-of-tomorrow/" title="Tweet this post to your followers">Twitter</a>
+						
+						<a class="share-pinterest" rel="nofollow" target="_blank" href="https://pinterest.com/pin/create/button/?url=https://themes.pixelwars.org/energify/demo-01/smart-cities-of-tomorrow/&amp;media=https://themes.pixelwars.org/energify/demo-01/wp-content/uploads/sites/2/2023/07/house-roof-with-photovoltaic-modules-historic-farm-house-with-modern-solar-panels-roof-wall.jpg&amp;description=Solar%20Energy%20in%20Developing%20Countries" title="Pin it">Pinterest</a>
+						
+						<a class="share-mail" rel="nofollow" target="_blank" href="mailto:?subject=I%20wanted%20you%20to%20see%20this%20post&#038;body=Check%20out%20this%20post:%20Solar%20Energy%20in%20Developing%20Countries%20-%20https://themes.pixelwars.org/energify/demo-01/smart-cities-of-tomorrow/" title="Email this post to a friend">Email</a>
+					</span> <!-- .entry-share-inner-wrap -->
+				</span> <!-- .entry-share-wrap -->
+			</span> <!-- .entry-share -->
+							</div> <!-- .entry-meta .below-title -->
+							</header> <!-- .entry-header -->
+							<div class="featured-image">
+						<img width="1920" height="1280" src="{{asset($item['img'])}}" class="attachment-energify_image_size_7 size-energify_image_size_7 wp-post-image" alt="" decoding="async" srcset="{{asset($item['img'])}}" sizes="(max-width: 1920px) 100vw, 1920px" />					</div> <!-- .featured-image -->
+							</div> <!-- .post-header -->
+						</div> <!-- .layout-medium -->
+			</section> <!-- .top-content-single -->
+		
+<div id="main" class="site-main">
+	<div class="layout-fixed">
+		<div id="primary" class="content-area ">
+			<div id="content" class="site-content" role="main">
+				<article id="post-5652" class="post-5652 post type-post status-publish format-standard has-post-thumbnail hentry category-insights is-cat-link-borders-light is-cat-link-rounded">
+					<div class="hentry-wrap">
+												<div class="entry-content">
+							
+<p>{{$item['wordtitle']}}</p>
+
+
+
+<h2 class="wp-block-heading has-large-font-size">{{$item['subtitle1']}}</h2>
+
+
+
+<p>{{$item['contentsubtitle1']}}</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="683" src="{{asset($item['bimg1'])}}" alt="" class="wp-image-8786" srcset="{{asset($item['bimg1'])}}" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+<h2 class="wp-block-heading has-large-font-size">{{$item['subtitle2']}}</h2>
+
+<p>{{$item['contentsubtitle2']}}</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-2">
+<div class="wp-block-column is-layout-flow">
+<h2 class="wp-block-heading">{{$item['subtitle3']}}</h2>
+
+
+
+<p>{{$item['contentsubtitle3']}}</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" loading="lazy" width="1024" height="597" src="{{asset($item['bimg2'])}}" alt="" class="wp-image-8813" srcset="{{asset($item['bimg2'])}}" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+</div>
+</div>
+
+
+
+<p>{{$item['contentend']}}</p>
+						</div> <!-- .entry-content -->
+					</div> <!-- .hentry-wrap -->
+								<div class="share-links">
+				<h3>Share This</h3>
+				
+				<a class="share-facebook" rel="nofollow" target="_blank" href="https://www.facebook.com/sharer.php?u=https://themes.pixelwars.org/energify/demo-01/smart-cities-of-tomorrow/&amp;t=Solar%20Energy%20in%20Developing%20Countries" title="Share this post on Facebook">
+					<i class="pw-icon-facebook"></i>
+				</a>
+				
+				<a class="share-twitter" rel="nofollow" target="_blank" href="https://twitter.com/intent/tweet?text=Currently%20reading:%20'Solar%20Energy%20in%20Developing%20Countries'%20on%20https://themes.pixelwars.org/energify/demo-01/smart-cities-of-tomorrow/" title="Tweet this post to your followers">
+					<i class="pw-icon-twitter"></i>
+				</a>
+				
+				<a class="share-pinterest" rel="nofollow" target="_blank" href="https://pinterest.com/pin/create/button/?url=https://themes.pixelwars.org/energify/demo-01/smart-cities-of-tomorrow/&amp;media=https://themes.pixelwars.org/energify/demo-01/wp-content/uploads/sites/2/2023/07/house-roof-with-photovoltaic-modules-historic-farm-house-with-modern-solar-panels-roof-wall.jpg&amp;description=Solar%20Energy%20in%20Developing%20Countries" title="Pin it">
+					<i class="pw-icon-pinterest"></i>
+				</a>
+				
+				<a class="share-mail" rel="nofollow" target="_blank" href="mailto:?subject=I%20wanted%20you%20to%20see%20this%20post&#038;body=Check%20out%20this%20post:%20Solar%20Energy%20in%20Developing%20Countries%20-%20https://themes.pixelwars.org/energify/demo-01/smart-cities-of-tomorrow/" title="Email this post to a friend">
+					<i class="pw-icon-mail"></i>
+				</a>
+			</div> <!-- .share-links -->
+			<nav class="nav-single">
+				@if ($pitem != '' )
+				<div class="nav-previous">
+				<a class="nav-image-link" href="{{route('fronted.newsDetails',$pre)}}">
+					<img alt="" src="{{asset($pitem['img'])}}">
+				</a> <!-- .nav-image-link -->
+					<div class="nav-desc"><h4>Previous Post</h4>
+					<a href="{{route('fronted.newsDetails',$pre)}}" rel="prev"><span class="meta-nav">&#8592;</span> {{$pitem['title']}}</a></div>	
+					
+					<a class="nav-overlay-link" href="{{route('fronted.newsDetails',$pre)}}" rel="prev">
+					{{$pitem['title']}}													</a> <!-- .nav-overlay-link -->
+				</div> <!-- .nav-previous -->
+			@endif
+
+			@if ($nitem != '' )
+			    <div class="nav-next">
+				<a class="nav-image-link" href="{{route('fronted.newsDetails',$next)}}">
+					<img alt="" src="{{asset($nitem['img'])}}">
+				</a> <!-- .nav-image-link -->
+						<div class="nav-desc"><h4>Next Post</h4><a href="{{route('fronted.newsDetails',$next)}}" rel="next">{{$nitem['title']}}
+							<span class="meta-nav">&#8594;</span></a></div>	
+							
+							
+							<a class="nav-overlay-link" href="{{route('fronted.newsDetails',$next)}}" rel="next">
+							{{$nitem['title']}}														</a> <!-- .nav-overlay-link -->
+				</div> <!-- .nav-next -->
+			@endif
+
+				
+
+				
+
+	</nav> <!-- .nav-single -->
+									<div class="related-posts">
+					<h3 class="widget-title">
+						<span>You May Also Like</span>
+					</h3> <!-- .widget-title -->
+					
+
+
+
+
+
+		<div class="blocks">
+			@if ( !empty($content[0]))
+			@for ($e = 0; $e < count($content); $e++)
+			<?php 
+			if($e == $pre || $e == $next || $e == $i ) continue ;
+			$string = $content[$e];
+			$pairs = explode('#x#', $string);
+			$slide = [];
+			foreach ($pairs as $pair) {
+				list($key, $value) = explode('=#=', $pair);
+				$slide[$key] = $value;
+			}
+			if($slide['status']== 'disappear')  continue;
+			$imagePath = ($slide["img"]);
+			$img = str_replace('\\', '/', $imagePath);
+			?>
+			
+			<div class="block">
+				<div class="post-thumbnail" 
+				style="background-image: url({{asset($img)}})">
+						<div class="post-wrap">
+							<header class="entry-header">
+								<div class="entry-meta">
+
+									@if ($slide['category']=='NEWS')
+									<span class="cat-links">
+									 <a href="{{route('fronted.onlynews')}}" rel="category tag">{{$slide['title']}}</a>
+									</span> <!-- .cat-links -->
+									@else
+							    	<span>
+										 <a href="{{route('fronted.onlyinsight')}}" rel="category tag">{{$slide['title']}}</a>
+										</span> <!-- .cat-links -->
+									@endif
+								</div> <!-- .entry-meta -->
+								
+								<h2 class="entry-title">
+									<a href="{{route('fronted.newsDetails',$e)}}">{{$slide['title']}}</a>
+								</h2> <!-- .entry-title -->
+								
+								<a class="more-link" href="{{route('fronted.newsDetails',$e)}}">View Post</a> <!-- .more-link -->
+							</header> <!-- .entry-header -->
+						</div> <!-- .post-wrap -->
+					</div> <!-- .post-thumbnail -->
+			</div> <!-- .block -->
+			@endfor
+				
+			@endif
+		</div> <!-- .blocks -->
+
+
+				</div> <!-- .related-posts -->
+							</article> <!-- .post -->
+							<div id="comments" class="comments-area">
+					<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave A Comment 
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small>
+</h3>
+<form action="{{route('fronted.news.comment')}}" method="post" id="commentform" 
+            class="comment-form" novalidate>
+			@csrf
+			@method('post')
+			<p class="comment-notes">
+				<span id="email-notes">Your email address will not be published.</span> 
+				<span class="required-field-message">Required fields are marked <span class="required">*</span></span>
+			</p>
+			<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label>
+				<textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author">
+            	<label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30"
+	            maxlength="245" autocomplete="name" required />
+			</p>
+
+
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" 
+	aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">Website</label> 
+	<input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit">
+	<input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> 
+	<input type='hidden' name='comment_post_ID' value='5652' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+
+</p></form>	</div><!-- #respond -->
+				</div>
+					</div> <!-- #content .site-content -->
+		</div> <!-- #primary .content-area -->
+	</div> <!-- layout -->
+</div> <!-- #main .site-main -->
+
+        <footer id="colophon" class="site-footer" role="contentinfo">
+									<div class="site-info">
+							
+<p>@  {{now()->year}} Netzero Company</p>
+						</div> <!-- .site-info -->
+							</footer> <!-- #colophon .site-footer -->
+	</div>
+    
+	<style id='core-block-supports-inline-css' type='text/css'>
+.wp-container-2.wp-container-2{flex-wrap:nowrap;}
+</style>
+
+@endsection
