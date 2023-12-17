@@ -82,13 +82,29 @@
 						<div class="menu-wrap">
 							<div class="layout-medium">
 
-                                <a class="menu-toggle">
-                                    <span class="lines"></span>
+
                                     <a href="{{route('fronted.index')}}" rel="home" class="logo-img">
                                         <img src="{{asset('dashboard/assets/logo.png')}}">
                                     </a>
+                                    <ul class="contact-nav-menu">
 
+                                        <li>
+                                            <a href="mailto:example@example.com">
+                                            <i class="fas fa-at"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:example@example.com">
+                                                <i class="fas fa-phone"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                <a class="menu-toggle">
+
+                                    <span class="lines"></span>
                                 </a>
+
+
                                 <!-- .menu-toggle -->
 <div class="nav-menu"><ul id="menu-main-menu" class=""><li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-847"><a href="{{route('fronted.index')}}" aria-current="page">Home</a></li>
 <li id="menu-item-1001" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="{{route('fronted.about')}}">About Us</a></li>
