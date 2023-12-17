@@ -68,6 +68,12 @@
 }
 
 @media(max-width:1020px){
+    .menu-wrap {
+        position:relative;
+    }
+    .site-header {
+        top:15px;
+    }
     .contact-nav-menu {
         display: flex !important;
     }
