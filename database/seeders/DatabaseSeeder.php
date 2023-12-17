@@ -23,10 +23,10 @@ class DatabaseSeeder extends Seeder
             'password' =>Hash::make('xYz12@d@BolaEl3arab'),
         ]);
 
-//        $this->call([
-//            HomeSeeder::class,
-//        ]);
-//
+        $this->call([
+            HomeSeeder::class,
+        ]);
+
 
 
     }

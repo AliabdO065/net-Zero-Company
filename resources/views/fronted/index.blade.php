@@ -87,6 +87,7 @@
                                     <a href="{{route('fronted.index')}}" rel="home" class="logo-img">
                                         <img src="{{asset('dashboard/assets/logo.png')}}">
                                     </a>
+
                                 </a>
                                 <!-- .menu-toggle -->
 <div class="nav-menu"><ul id="menu-main-menu" class=""><li id="menu-item-847" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-11 current_page_item menu-item-847"><a href="{{route('fronted.index')}}" aria-current="page">Home</a></li>
@@ -630,7 +631,7 @@
 								<div class="elementor-element elementor-element-6f449497 elementor-widget elementor-widget-qi_addons_for_elementor_process" data-id="6f449497" data-element_type="widget" data-widget_type="qi_addons_for_elementor_process.default">
 				<div class="elementor-widget-container">
 			<div class="qodef-shortcode qodef-m  qodef-qi-process  qodef-qi--has-appear qodef-qi-grid qodef-layout--qi-columns  qodef-col-num--4  qodef-item-layout--horizontal qodef-responsive--predefined">
-	<div class="qodef-grid-inner">
+	<div class="qodef-grid-inner icon-container ">
 
 
 
@@ -651,7 +652,7 @@ foreach ($pairs as $pair) {
 if($slide['status']=='disappear') continue;
 ?>
 
-				<div class="qodef-e qodef-process-item qodef-grid-item elementor-repeater-item-e90ae08">
+				<div class=" qodef-e qodef-process-item qodef-grid-item elementor-repeater-item-e90ae08">
 			<div class="qodef-e-inner">
 				<div class="qodef-e-content">
 					<div class="qodef-e-icon-holder">
