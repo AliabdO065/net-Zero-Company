@@ -139,3 +139,6 @@ button[type="submit"] {
     color: #FFC107 !important;
 }
 
+button{
+    color: black !important;
+}

@@ -22,7 +22,6 @@ use Illuminate\Support\Facades\Auth;
 
 //frontend 
 Route::group(['as'=>'fronted.' ], function () {
-
     Route::get('/', [FrontedController::class,'home'])->name('index'); 
     Route::get('/home', [FrontedController::class,'home'])->name('index'); 
     Route::get('/about', [FrontedController::class,'about'])->name('about'); 
@@ -34,23 +33,15 @@ Route::group(['as'=>'fronted.' ], function () {
     Route::get('/onlyinsight', [FrontedController::class,'onlyinsight'])->name('onlyinsight'); 
     Route::get('/news/details/{i}', [FrontedController::class,'newsDetails'])->name('newsDetails'); 
     Route::get('/contact', [FrontedController::class,'contact'])->name('contact'); 
-
-
-
-
     Route::post('/news/comments', [NewsController::class,'comment'])->name('news.comment'); 
-
 });
-
 
 //backend
 Route::group(['prefix'=>'admin','as'=>'dashboard.','middleware'=>'auth'], function () {
-
+//dashboard
 Route::get('/', [HomeController::class,'index'])->name('index'); 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 // Home page
-
 // Slider section
     Route::get('/home', [HomeController::class,'slides'])->name('slides'); 
     Route::get('/home/slide', [HomeController::class,'slides'])->name('slides'); 
@@ -73,8 +64,12 @@ Route::get('/', [HomeController::class,'index'])->name('index');
     Route::post('/home/category/update/', [HomeController::class,'updatecategory'])->name('category.update'); 
     Route::get('/home/category/delete/{id}', [HomeController::class,'deletecategory'])->name('category.delete');
 //Images section
-    Route::get('/home/images', [HomeController::class,'images'])->name('images.home'); 
-    Route::post('/home/images/update', [HomeController::class,'updateimages'])->name('images.home.update'); 
+    Route::get('/home/images', [HomeController::class,'images'])->name('images.home');
+    Route::get('/home/images/add', [HomeController::class,'addimages'])->name('images.home.add'); 
+    Route::post('/home/images/store', [HomeController::class,'storeimages'])->name('images.home.store'); 
+    Route::get('/home/images/edit/{id}', [HomeController::class,'editimages'])->name('images.home.edit'); 
+    Route::post('/home/images/update/', [HomeController::class,'updateimages'])->name('images.home.update'); 
+    Route::get('/home/images/delete/{id}', [HomeController::class,'deleteimages'])->name('images.home.delete');
 //Project&news  section
     Route::get('/home/control', [HomeController::class,'control'])->name('control'); 
     Route::post('/home/control/update', [HomeController::class,'updatecontrol'])->name('control.update'); 
@@ -96,7 +91,6 @@ Route::get('/', [HomeController::class,'index'])->name('index');
     Route::get('/home/footer/edit/{id}', [HomeController::class,'editfooter'])->name('footer.edit'); 
     Route::post('/home/footer/update/', [HomeController::class,'updatefooter'])->name('footer.update'); 
     Route::get('/home/footer/delete/{id}', [HomeController::class,'deletefooter'])->name('footer.delete');
-
     
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 // About page

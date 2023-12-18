@@ -56,7 +56,7 @@ class FrontedController extends Controller
         $allservices = $this->getit(1, Service::class);
         $about = $this->getit(3, Home::class);
         $category = $this->getContent(4, Home::class);
-        $images = $this->getit(5, Home::class);
+        $images = $this->getContent(5, Home::class);
         $control = $this->getit(6, Home::class);
         $news = $this->getContent(1, News::class);
         $projects = $this->getContent(1, Projects::class);
@@ -71,11 +71,12 @@ class FrontedController extends Controller
         $main = $this->getit(1 ,About::class);
         $history = $this->getContent(2 ,About::class);
         $services = $this->getContent(3 ,About::class);
-        $images = $this->getContent(4 ,About::class);
+        $images = $this->getContent(4, About::class);
+        $allimages = $this->getContent(5, Home::class);
         $masters = $this->getContent(7, Home::class);
         $contact = $this->getit(8 ,Home::class);
         $footer = $this->getContent(9, Home::class);
-        return view('fronted.about',compact('main','history','services','images','masters','contact','footer'));
+        return view('fronted.about',compact('main','history','services','allimages','images','masters','contact','footer'));
     }
     public function services(){
         $main = $this->getit(1 ,Service::class);
@@ -87,7 +88,8 @@ class FrontedController extends Controller
     }
     public function projects(){
         $content = $this->getContent(1, Projects::class);
-        return view('fronted.projects',compact('content'));
+        $contact = $this->getit(8 ,Home::class);
+        return view('fronted.projects',compact('content','contact'));
     }
     public function projectDetails($i){
         $projects = $this->getContent(1, Projects::class);
@@ -107,19 +109,22 @@ class FrontedController extends Controller
     public function news(){
         $word = 'all';
         $content = $this->getContent(1, News::class);
-        return view('fronted.news',compact('word','content'));
+        $contact = $this->getit(8 ,Home::class);
+        return view('fronted.news',compact('word','content','contact'));
     }
     public function onlynews()
     {
         $word = 'NEWS';
         $content = $this->getContent(1, News::class);
-        return view('fronted.news',compact('word','content'));
+        $contact = $this->getit(8 ,Home::class);
+        return view('fronted.news',compact('word','content','contact'));
     }
     public function onlyinsight()
     {
         $word = 'INSIGHTS';
         $content = $this->getContent(1, News::class);
-        return view('fronted.news',compact('word','content'));
+        $contact = $this->getit(8 ,Home::class);
+        return view('fronted.news',compact('word','content','contact'));
     }
     public function newsDetails($i){                            //there is a problem
         $content = $this->getContent(1, News::class);
@@ -159,27 +164,15 @@ class FrontedController extends Controller
        }else{
         $nitem = '';
        }
-
-
-    //    $r = 0;
-    //         for($k = 0 ; $k < count($content) ;$k++ ){
-    //         if($k == $i || $k == $next ||$k == $pre ){
-    //             $ritem = '';continue;
-    //         }
-    //         $temp = $this->getArray(1, News::class,$k);
-    //         if($temp['status'] == "disappear") continue;
-    //         else if ($temp['status'] == "appear"){
-    //             $ritem = $temp;$r=$k; break;
-    //         }
-    //     }
-
-        return view('fronted.newsDetails',compact('item','pitem','nitem','i','pre','next','content'));
+        $contact = $this->getit(8 ,Home::class);
+        return view('fronted.newsDetails',compact('item','pitem','nitem','i','pre','next','content','contact'));
     }
     
     public function contact(){
         $main = $this->getit(1 ,Contact::class);
         $footer = $this->getContent(9, Home::class);
-        return view('fronted.contact',compact('main','footer'));
+        $contact = $this->getit(8 ,Home::class);
+        return view('fronted.contact',compact('main','footer','contact'));
     }
 
 }

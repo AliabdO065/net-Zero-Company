@@ -484,56 +484,34 @@
 			<div class="qodef-shortcode qodef-m  qodef-qi-image-gallery-masonry qodef-qi-fslightbox-popup qodef-popup-gallery qodef-image--hover-zoom qodef-image--hover-from-top qodef-qi-grid qodef-layout--qi-masonry qodef-items--fixed qodef-col-num--3   qodef-responsive--predefined">
 	<div class="qodef-grid-inner">
 			<div class="qodef-qi-grid-masonry-sizer"></div>
-<div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
-	<div class="qodef-e-inner">
-			<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img1'])}}" data-type="image" data-fslightbox="gallery-1">
-			<img width="1920" height="954" src="{{asset($slide['img1'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img1'])}} 1920w,{{asset($slide['img1'])}} 300w, {{asset($slide['img1'])}} 1024w,{{asset($slide['img1'])}} 768w,
-			{{asset($slide['img1'])}} 1107w,{{asset($slide['img1'])}} 1060w,{{asset($slide['img1'])}} 1536w,
-			{{asset($slide['img1'])}} 550w,{{asset($slide['img1'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
-			</div>
-</div>
-<div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
-	<div class="qodef-e-inner">
-		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img2'])}}" data-type="image" data-fslightbox="gallery-1">
-			<img width="1920" height="954" src="{{asset($slide['img2'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img2'])}} 1920w,{{asset($slide['img2'])}} 300w, {{asset($slide['img2'])}} 1024w,{{asset($slide['img2'])}} 768w,
-			{{asset($slide['img2'])}} 1107w,{{asset($slide['img2'])}} 1060w,{{asset($slide['img2'])}} 1536w,
-			{{asset($slide['img2'])}} 550w,{{asset($slide['img2'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
-			</div>
-</div>
-<div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
-	<div class="qodef-e-inner">
-		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img3'])}}" data-type="image" data-fslightbox="gallery-1">
-			<img width="1920" height="954" src="{{asset($slide['img3'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img3'])}} 1920w,{{asset($slide['img3'])}} 300w, {{asset($slide['img3'])}} 1024w,{{asset($slide['img3'])}} 768w,
-			{{asset($slide['img3'])}} 1107w,{{asset($slide['img3'])}} 1060w,{{asset($slide['img3'])}} 1536w,
-			{{asset($slide['img3'])}} 550w,{{asset($slide['img3'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a></div>
-</div>
-<div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
-	<div class="qodef-e-inner">
-		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img4'])}}" data-type="image" data-fslightbox="gallery-1">
-			<img width="1920" height="954" src="{{asset($slide['img4'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img4'])}} 1920w,{{asset($slide['img4'])}} 300w, {{asset($slide['img4'])}} 1024w,{{asset($slide['img4'])}} 768w,
-			{{asset($slide['img4'])}} 1107w,{{asset($slide['img4'])}} 1060w,{{asset($slide['img4'])}} 1536w,
-			{{asset($slide['img4'])}} 550w,{{asset($slide['img4'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a></div>
-</div>
-<div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
-	<div class="qodef-e-inner">
-		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img5'])}}" data-type="image" data-fslightbox="gallery-1">
-			<img width="1920" height="954" src="{{asset($slide['img5'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img5'])}} 1920w,{{asset($slide['img5'])}} 300w, {{asset($slide['img5'])}} 1024w,{{asset($slide['img5'])}} 768w,
-			{{asset($slide['img5'])}} 1107w,{{asset($slide['img5'])}} 1060w,{{asset($slide['img5'])}} 1536w,
-			{{asset($slide['img5'])}} 550w,{{asset($slide['img5'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a></div>
-</div>
-<div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
-	<div class="qodef-e-inner">
-		<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img6'])}}" data-type="image" data-fslightbox="gallery-1">
-			<img width="1920" height="954" src="{{asset($slide['img6'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
-			srcset="{{asset($slide['img6'])}} 1920w,{{asset($slide['img6'])}} 300w, {{asset($slide['img6'])}} 1024w,{{asset($slide['img6'])}} 768w,
-			{{asset($slide['img6'])}} 1107w,{{asset($slide['img6'])}} 1060w,{{asset($slide['img6'])}} 1536w,
-			{{asset($slide['img6'])}} 550w,{{asset($slide['img6'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a></div>
-</div>
+@if ( !empty($allimages[0]))
+
+		@foreach ($allimages as $i => $slides)
+		<?php
+		$string = $slides;
+		$pairs = explode('#x#', $string);
+		$slide = [];
+		foreach ($pairs as $pair) {
+			list($key, $value) = explode('=#=', $pair);
+			$slide[$key] = $value;
+		}
+		?>
+		
+		<div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
+			<div class="qodef-e-inner">
+					<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img'])}}" data-type="image" data-fslightbox="gallery-1">
+					<img width="1920" height="954" src="{{asset($slide['img'])}}" class="attachment- size-" alt="" decoding="async" loading="lazy"
+					srcset="{{asset($slide['img'])}} 1920w,{{asset($slide['img'])}} 300w, {{asset($slide['img'])}} 1024w,{{asset($slide['img'])}} 768w,
+					{{asset($slide['img'])}} 1107w,{{asset($slide['img'])}} 1060w,{{asset($slide['img'])}} 1536w,
+					{{asset($slide['img'])}} 550w,{{asset($slide['img'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
+					</div>
+		</div>
+@endforeach	
+@endif
+
+
+
+
 	</div>
 </div>
 		</div>

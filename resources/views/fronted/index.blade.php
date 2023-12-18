@@ -89,12 +89,12 @@
                                     <ul class="contact-nav-menu">
 
                                         <li>
-                                            <a href="mailto:example@example.com">
+                                            <a href="mailto:{{$contact['directMail']}}">
                                             <i class="fas fa-at"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="mailto:example@example.com">
+                                            <a href="mailto:{{$contact['directPhone']}}">
                                                 <i class="fas fa-phone"></i>
                                             </a>
                                         </li>
@@ -709,71 +709,39 @@ if($slide['status']=='disappear') continue;
 				<div class="elementor-widget-container">
 			<div class="qodef-shortcode qodef-m  qodef-qi-image-slider qodef-qi-fslightbox-popup qodef-popup-gallery qodef-image--hover-zoom-out  qodef--centered-zoom qodef-col-num--4 qodef-qi-grid qodef-qi-swiper-container  qodef-navigation--inside      qodef-navigation--hover-move" data-options="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;slidesPerView&quot;:&quot;4&quot;,&quot;spaceBetween&quot;:30,&quot;spaceBetweenTablet&quot;:30,&quot;spaceBetweenMobile&quot;:30,&quot;effect&quot;:&quot;&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:true,&quot;centeredSlides&quot;:true,&quot;speed&quot;:&quot;3000&quot;,&quot;speedAnimation&quot;:&quot;&quot;,&quot;outsideNavigation&quot;:&quot;no&quot;,&quot;outsidePagination&quot;:&quot;no&quot;,&quot;unique&quot;:560,&quot;partialValue&quot;:0,&quot;disablePartialValue&quot;:&quot;&quot;}">
 	<div class="swiper-wrapper">
+		@if ( !empty($images[0]))
 
-<div class="qodef-e swiper-slide">
+		@foreach ($images as $i => $slides)
+		<?php
+		$string = $slides;
+		$pairs = explode('#x#', $string);
+		$slide = [];
+		foreach ($pairs as $pair) {
+			list($key, $value) = explode('=#=', $pair);
+			$slide[$key] = $value;
+		}
+		?>
+		
+
+	<div class="qodef-e swiper-slide">
 	<div class="qodef-e-inner">
 		<div class="qodef-e-inner-holder">
-							<a class="qodef-popup-item" itemprop="image" href="{{asset($images['img1'])}}" data-type="image" data-fslightbox="gallery-560">
-							<img width="1920" height="1920" src="{{asset($images['img1'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-							srcset="{{asset($images['img1'])}}" sizes="(max-width: 1920px) 100vw, 1920px" />							</a>
-					</div>{{asset($images['img1'])}}
-	</div>
-	</div>
-
-<div class="qodef-e swiper-slide">
-	<div class="qodef-e-inner">
-		<div class="qodef-e-inner-holder">
-							<a class="qodef-popup-item" itemprop="image" href="{{asset($images['img2'])}}" data-type="image" data-fslightbox="gallery-560">
-							<img width="1920" height="1282" src="{{asset($images['img2'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-							srcset="{{asset($images['img2'])}}" sizes="(max-width: 1920px) 100vw, 1920px" />							</a>
+							<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img'])}}" data-type="image" data-fslightbox="gallery-560">
+							<img width="1920" height="1280" src="{{asset($slide['img'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy"
+							srcset="{{asset($slide['img'])}}" sizes="(max-width: 1920px) 100vw, 1920px" />							</a>
 					</div>
 	</div>
-	</div>
-
-<div class="qodef-e swiper-slide">
-	<div class="qodef-e-inner">
-		<div class="qodef-e-inner-holder">
-							<a class="qodef-popup-item" itemprop="image" href="{{asset($images['img3'])}}" data-type="image" data-fslightbox="gallery-560">
-							<img width="1920" height="1147" src="{{asset($images['img3'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-							srcset="{{asset($images['img3'])}}" sizes="(max-width: 1920px) 100vw, 1920px" />							</a>
-					</div>
-	</div>
-	</div>
-
-<div class="qodef-e swiper-slide">
-	<div class="qodef-e-inner">
-		<div class="qodef-e-inner-holder">
-							<a class="qodef-popup-item" itemprop="image" href="{{asset($images['img4'])}}" data-type="image" data-fslightbox="gallery-560">
-							<img width="1920" height="1055" src="{{asset($images['img4'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-							srcset="{{asset($images['img4'])}}" sizes="(max-width: 1920px) 100vw, 1920px" />							</a>
-					</div>
-	</div>
-	</div>
-
-<div class="qodef-e swiper-slide">
-	<div class="qodef-e-inner">
-		<div class="qodef-e-inner-holder">
-							<a class="qodef-popup-item" itemprop="image" href="{{asset($images['img5'])}}" data-type="image" data-fslightbox="gallery-560">
-							<img width="1920" height="979" src="{{asset($images['img5'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-							srcset="{{asset($images['img5'])}} 981w" sizes="(max-width: 1920px) 100vw, 1920px" />							</a>
-					</div>
-	</div>
-	</div>
-
-<div class="qodef-e swiper-slide">
-	<div class="qodef-e-inner">
-		<div class="qodef-e-inner-holder">
-							<a class="qodef-popup-item" itemprop="image" href="{{asset($images['img6'])}}" data-type="image" data-fslightbox="gallery-560">
-							<img width="1920" height="1280" src="{{asset($images['img6'])}}" class="attachment-full size-full" alt="" decoding="async" loading="lazy"
-							srcset="{{asset($images['img6'])}}" sizes="(max-width: 1920px) 100vw, 1920px" />							</a>
-					</div>
-	</div>
-	</div>
+	</div>	
+@endforeach	
+@endif
 	</div>
 		<div class="swiper-button-prev"><svg class="qodef-swiper-arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;"><line x1="0.5" y1="16" x2="33.5" y2="16"/><line x1="0.3" y1="16.5" x2="16.2" y2="0.7"/><line x1="0" y1="15.4" x2="16.2" y2="31.6"/></svg></div>
 	<div class="swiper-button-next"><svg class="qodef-swiper-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 32.3" xml:space="preserve" style="stroke-width: 2;"><line x1="0" y1="16" x2="33" y2="16"/><line x1="17.3" y1="0.7" x2="33.2" y2="16.5"/><line x1="17.3" y1="31.6" x2="33.5" y2="15.4"/></svg></div>
+
+
 </div>
-		</div>
+
+</div>
 				</div>
 					</div>
 		</div>

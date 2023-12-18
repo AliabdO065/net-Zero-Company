@@ -423,106 +423,115 @@ class HomeController extends Controller
 
     public function images()
     {
-        $content = $this->getContent(5);
+        $contentAsString = $this->getContent(5);
+        $content = explode("#xt#",$contentAsString);
         return view('dashboard.home.images.images',compact('content'));
     }
-
-    public function updateimages(Request $request)
+    public function addimages()
     {
-            $newcontent =  '';
-                
-                if ($request->file('img1')) {
-                    $file = $request->file('img1');
-                    $filename = Str::uuid() . $file->getClientOriginalName();
-                    $file->move(public_path('images/home/about'), $filename);
-                    $path = 'images\home\about\\' . $filename;
-                    $newcontent.='img1=#='.$path;
-
-                    $filePath = public_path($request->image1);
-                    if (File::exists($filePath)) {
-                        File::delete($filePath);
-                    }
-                }
-                else{
-                    $newcontent.='img1=#='.$request->image1;
-                }
-                if ($request->file('img2')) {
-                    $file = $request->file('img2');
-                    $filename = Str::uuid() . $file->getClientOriginalName();
-                    $file->move(public_path('images/home/about'), $filename);
-                    $path = 'images\home\about\\' . $filename;
-                    $newcontent.='#x#'.'img2=#='.$path;
-
-                    $filePath = public_path($request->image2); 
-                    if (File::exists($filePath)) {
-                        File::delete($filePath);
-                    }
-                }else{
-                    $newcontent.='#x#'.'img2=#='.$request->image2;
-                }
-                if ($request->file('img3')) {
-                    $file = $request->file('img3');
-                    $filename = Str::uuid() . $file->getClientOriginalName();
-                    $file->move(public_path('images/home/about'), $filename);
-                    $path = 'images\home\about\\' . $filename;
-                    $newcontent.='#x#'.'img3=#='.$path;
+        return view('dashboard.home.images.add');
+    }
+    ////
+    public function storeimages(Request $request)
+    {       
+        $request->validate([
+            'img' => ['required'],
+        ]);
+    
+        $contentAsString = $this->getContent(5);
+        $content = explode("#xt#",$contentAsString);
+        if (!empty($content[0]))
+            $str = '#xt#';
+        else 
+            $str = '';
         
-                    $filePath = public_path($request->image3); 
-                    if (File::exists($filePath)) {
-                        File::delete($filePath);
-                    }
-                }else{
-                    $newcontent.='#x#'.'img3=#='.$request->image3;
-                }
-                if ($request->file('img4')) {
-                    $file = $request->file('img4');
-                    $filename = Str::uuid() . $file->getClientOriginalName();
-                    $file->move(public_path('images/home/about'), $filename);
-                    $path = 'images\home\about\\' . $filename;
-                    $newcontent.='#x#'.'img4=#='.$path;
-
-                    $filePath = public_path($request->image4);
-                    if (File::exists($filePath)) {
-                        File::delete($filePath);
-                    }
-                }
-            else{
-                $newcontent.='#x#'.'img4=#='.$request->image4;
-            }
-            if ($request->file('img5')) {
-                $file = $request->file('img5');
-                $filename = Str::uuid() . $file->getClientOriginalName();
-                $file->move(public_path('images/home/about'), $filename);
-                $path = 'images\home\about\\' . $filename;
-                $newcontent.='#x#'.'img5=#='.$path;
-
-                $filePath = public_path($request->image5);
-                if (File::exists($filePath)) {
-                    File::delete($filePath);
-                }
-            }
-        else{
-            $newcontent.='#x#'.'img5=#='.$request->image5;
-        }
-        if ($request->file('img6')) {
-            $file = $request->file('img6');
+        if ($request->file('img')) {
+            $file = $request->file('img');
             $filename = Str::uuid() . $file->getClientOriginalName();
             $file->move(public_path('images/home/about'), $filename);
             $path = 'images\home\about\\' . $filename;
-            $newcontent.='#x#'.'img6=#='.$path;
+            $str.='img=#='.$path;
+        }
+        $newcontent = $contentAsString . $str;
+        $slidesarr['content'] = $newcontent;
+        Home::find(5)->update(['content' => $newcontent] );
+        return redirect()->route('dashboard.images.home');
+    }
+    
+    public function editimages($id)
+    {
+        $allcontent = $this->getContent(5);
+        $content = explode("#xt#",$allcontent);
+        $slide = $content[$id];
+        $pairs = explode('#x#', $slide);
+        $slide = [];
+        foreach ($pairs as $pair) {
+            list($key, $value) = explode('=#=', $pair);
+            $slide[$key] = $value;
+        }
+        if($id>0)
+            $old= '#xt#'.'img=#='.$slide['img'];
+        else
+            $old= 'img=#='.$slide['img'];
+        return view('dashboard.home.images.edit' , compact('slide','old'));
+    }
+    ////
+    public function updateimages(Request $request)
+    {
+        $old =$request->old;
+        $allcontent = $this->getContent(5);
 
-            $filePath = public_path($request->image6);
+        if($old[0]=='#'&& $old[2]=='t')
+        $str = '#xt#';
+        else
+        $str ='';
+        if ($request->file('img')) {
+            $file = $request->file('img');
+            $filename = Str::uuid() . $file->getClientOriginalName();
+            $file->move(public_path('images/home/about'), $filename);
+            $path = 'images\home\about\\' . $filename;
+            $str.='img=#='.$path;
+    
+            $filePath = public_path($request->image); 
             if (File::exists($filePath)) {
                 File::delete($filePath);
             }
+        }else{
+            $str.='#x#'.'img=#='.$request->image;
         }
-    else{
-        $newcontent.='#x#'.'img6=#='.$request->image6;
+        $newcontent = str_replace($old, $str, $allcontent);
+        Home::find(5)->update(['content' => $newcontent] );
+        return redirect()->route('dashboard.images.home');
     }
-                
-            Home::find(5)->update(['content' => $newcontent] );
-            return redirect()->route('dashboard.images.home');
+    
+public function deleteimages($id)
+{
+    $allcontent = $this->getContent(5);
+    $content = explode("#xt#",$allcontent);
+    $slide = $content[$id]; 
+    $pairs = explode('#x#', $slide);   
+    $slide = [];
+    foreach ($pairs as $pair) {
+        list($key, $value) = explode('=#=', $pair);
+        $slide[$key] = $value;
     }
+    if($id>0)
+        $old= '#xt#'.'img=#='.$slide['img'];
+    else if(isset($content[1]))
+        $old= 'img=#='.$slide['img'].'#xt#';
+    else
+        $old='img=#='.$slide['img']; 
+
+    $filePath = public_path($slide['img']); 
+    if (File::exists($filePath)) {
+        File::delete($filePath);
+    }
+    $newcontent = str_replace($old,'' ,$allcontent);
+    Home::find(5)->update(['content' => $newcontent]);
+
+    return redirect()->route('dashboard.images.home');
+}
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     ////////////////////// Control project news secthion
@@ -711,8 +720,10 @@ class HomeController extends Controller
                 'title' => ['required', new DisallowedWords],
                 'wordtitle' => ['required', new DisallowedWords],
                 'words' => ['required', new DisallowedWords],
+                'directmail' => ['required', new DisallowedWords],
+                'directphone' => ['required', new DisallowedWords],
             ]);
-            $newcontent = 'header=#='.$request->header.'#x#'.'wordheader=#='.$request->wordheader.'#x#'.'title=#='.$request->title.'#x#'.'wordtitle=#='.$request->wordtitle.'#x#'.'words=#='.$request->words;
+            $newcontent = 'header=#='.$request->header.'#x#'.'wordheader=#='.$request->wordheader.'#x#'.'title=#='.$request->title.'#x#'.'wordtitle=#='.$request->wordtitle.'#x#'.'words=#='.$request->words.'#x#'.'directMail=#='.$request->directmail.'#x#'.'directPhone=#='.$request->directphone;
             Home::find(8)->update(['content' => $newcontent] );
             return redirect()->route('dashboard.contact');
     }
