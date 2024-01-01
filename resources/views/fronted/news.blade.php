@@ -111,7 +111,7 @@
             </div> <!-- .header-wrap -->
         </header> <!-- #masthead .site-header -->
         <div id="main" class="site-main">
-            <div class="layout-medium">
+            <div class="layout-medium news-layout">
                 <div id="primary" class="content-area ">
                     <div id="content" class="site-content" role="main">
                         <div class="post-header post-header-classic archive-header">

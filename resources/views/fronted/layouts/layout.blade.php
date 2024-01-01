@@ -54,6 +54,7 @@
     <link rel='stylesheet' id='energify-fonts-css' href='http://fonts.googleapis.com/css?family=Jost%3A100%2C100i%2C200%2C200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i%7COutfit%3A100%2C100i%2C200%2C200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i&amp;ver=6.2.3' type='text/css' media='all' />
     <link rel='stylesheet' id='normalize-css' href='{{asset('fronted/wp-content/themes/NetZero/css/normalize18cf.css?ver=6.2.3')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='bootstrap-css' href='{{asset('fronted/wp-content/themes/NetZero/css/bootstrap18cf.css?ver=6.2.3')}}' type='text/css' media='all' />
+
     <link rel='stylesheet' id='fluidbox-css' href='{{asset('fronted/wp-content/themes/NetZero/js/fluidbox/fluidbox18cf.css?ver=6.2.3')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='magnific-popup-css' href='{{asset('fronted/wp-content/themes/NetZero/js/jquery.magnific-popup/magnific-popup18cf.css?ver=6.2.3')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='owl-carousel-css' href='{{asset('fronted/wp-content/themes/NetZero/js/owl-carousel/owl.carousel18cf.css?ver=6.2.3')}}' type='text/css' media='all' />
@@ -61,6 +62,7 @@
     <link rel='stylesheet' id='energify-768-css' href='{{asset('fronted/wp-content/themes/NetZero/css/76818cf.css?ver=6.2.3')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='energify-992-css' href='{{asset('fronted/wp-content/themes/NetZero/css/99218cf.css?ver=6.2.3')}}' type='text/css' media='all' />
     <link rel='stylesheet' id='energify-style-css' href='{{asset('fronted/wp-content/themes/NetZero/style18cf.css?ver=6.2.3')}}' type='text/css' media='all' />
+    <link rel="stylesheet" href="{{asset('dashboard/assets/stylesheets/front-custom.css')}}">
     <style id='energify-style-inline-css' type='text/css'>
         .site-title { font-family: 'Jost'; }
 

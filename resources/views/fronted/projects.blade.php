@@ -70,7 +70,7 @@
 
 					<nav id="site-navigation" class="main-navigation site-navigation" role="navigation">
 						<div class="menu-wrap">
-							<div class="layout-medium" style="color: black">
+							<div class="layout-medium projects-layout" style="color: black">
                                 <a class="menu-toggle">
                                     <span class="lines"></span>
                                     <a href="{{route('fronted.index')}}" rel="home" class="logo-img">
@@ -117,15 +117,15 @@
 			</div> <!-- .header-wrap -->
         </header> <!-- #masthead .site-header -->
 <div id="main" class="site-main">
-	<div class="layout-medium">
+	<div class="layout-medium projects-layout">
 		<div id="primary" class="content-area ">
 			<div id="content" class="site-content" role="main">
 				<div class="post-header post-header-classic portfolio-header">
 					<header class="entry-header" >
 						<h1 class="entry-title" style="padding-top: 143px;">
-							{{$control['projects']}}	
+							{{$control['projects']}}
 							<p style="display: block;font-size:27px">{{$control['descprojects']}}</p>
-					
+
 											</h1> <!-- .entry-title -->
 					</header> <!-- .entry-header -->
 				</div> <!-- .post-header .post-header-classic .portfolio-header -->

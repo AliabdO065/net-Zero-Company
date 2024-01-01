@@ -9,11 +9,12 @@
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.2.3' type='text/css' media='all' />
 <link rel='stylesheet' id='elementor-icons-shared-0-css' href='{{asset('fronted/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css?ver=5.15.3')}}' type='text/css' media='all' />
 <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='{{asset('fronted/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min52d5.css?ver=5.15.3')}}' type='text/css' media='all' />
-<link rel='stylesheet' id='elementor-icons-fa-regular-css' href='{{asset('fronted/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min52d5.css?ver=5.15.3')}}' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-regular-css' href='{{asset('fronte/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min52d5.css?ver=5.15.3')}}' type='text/css' media='all' />
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <script type='text/javascript' src='{{asset('fronted/wp-includes/js/jquery/jquery.min5aed.js?ver=3.6.4')}}' id='jquery-core-js'></script>
 <script type='text/javascript' src='{{asset('fronted/wp-includes/js/jquery/jquery-migrate.min6b00.js?ver=3.4.0')}}' id='jquery-migrate-js'></script>
 <link rel="https://api.w.org/" href="{{asset('fronted/wp-json/index.html')}}" />
+
 <link rel="alternate" type="application/json" href="{{asset('fronted/wp-json/wp/v2/pages/993.json')}}" />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="{{asset('fronted/sxmlrpc0db0.php?rsd')}}" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="{{asset('fronted/wp-includes/wlwmanifest.xml')}}" />
@@ -140,7 +141,7 @@
 		</div>
 							</div>
 		</section>
-			
+
 		<?php
 		$imagePath = ($main["img"]);
 		$backimg = str_replace('\\', '/', $imagePath);
@@ -155,7 +156,7 @@
 		</div>
 							</div>
 		</section>
-	
+
 
 
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-76558779 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="76558779" data-element_type="section">
@@ -519,7 +520,7 @@
 			$slide[$key] = $value;
 		}
 		?>
-		
+
 		<div class="qodef-e qodef-image-wrapper qodef-grid-item qodef-item--">
 			<div class="qodef-e-inner">
 					<a class="qodef-popup-item" itemprop="image" href="{{asset($slide['img'])}}" data-type="image" data-fslightbox="gallery-1">
@@ -529,7 +530,7 @@
 					{{asset($slide['img'])}} 550w,{{asset($slide['img'])}} 1006w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
 					</div>
 		</div>
-@endforeach	
+@endforeach
 @endif
 
 
