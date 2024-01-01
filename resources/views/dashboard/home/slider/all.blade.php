@@ -6,7 +6,7 @@
         <!-- .page-inner -->
         <div class="page-inner">
             <a href="{{route('dashboard.slide.add')}}" type="button" class="btn btn-success">Add Slide</a> 
-            <p class="text-muted m-4"> To Add Video Please Convert It To GIF From <a href="https://ezgif.com/video-to-gif"> Here  </a> 
+            <p class="text-muted m-2"> To Add Video Please Convert It To GIF From <a href="https://ezgif.com/video-to-gif"> Here  </a> 
                 <hr>
             <div style="display: flex;flex-wrap: wrap;justify-content: space-between;">
                 @if (!empty($content[0]))
